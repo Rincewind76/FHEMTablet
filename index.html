@@ -23,22 +23,9 @@
 
 
     <!-- define your personal style here, it wont be overwritten  -->
-	<link rel="stylesheet" href="/fhem/tablet/lib/jquery.gridster.min.css" />
 	<link rel="stylesheet" href="/fhem/tablet/css/fhem-tablet-ui.css" />
-	<link rel="stylesheet" href="/fhem/tablet/lib/font-awesome.min.css" />
-	<link rel="stylesheet" href="/fhem/tablet/lib/jquery.toast.min.css" />
 
-	<script type="text/javascript" src="/fhem/tablet/lib/jquery.toast.min.js"></script>
-	<script type="text/javascript" src="/fhem/tablet/lib/jquery.gridster.min.js"></script>
 	<script type="text/javascript" src="/fhem/tablet/js/fhem-tablet-ui.js"></script>
-	<script type="text/javascript" src="/fhem/pgm2/jquery.min.js"></script>
-	<script type="text/javascript" src="/fhem/tablet/lib/fa-multi-button.min.js"></script>
-	
-	<!-- Enable this lines for usage with WebViewControl -->
-	<script type="text/javascript" src="/fhem/pgm2/cordova-2.3.0.js"></script>
-	<script type="text/javascript" src="/fhem/js/webviewcontrol.js"></script>
-	<script type="text/javascript">var wvcDevices = {'523931': 'webtablet'}; var wvcUserCssFile="webviewcontrol.css"</script>
-	<!-- End for WebViewControl -->
 	
     <title>FHEM-Tablet-UI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -56,17 +43,20 @@
 	<meta name="gridster_cols" content="10">
 	<meta name="gridster_rows" content="6">
 
-	<meta name="widget_base_width" content="132">
+	<meta name="widget_base_width" content="102">
 	<meta name="widget_base_height" content="115">
 
 </head>
 
 <body>
-    <div class="gridster">
-        <ul>
-		<li data-row="1" data-col="1" data-sizex="2" data-sizey="4" data-template="/fhem/ftui/component/co_menue.htm"></li>
-        </ul>
-    </div>
+	<div class="page" id="index">
+	</div>
+
+	<div class="gridster">
+        	<ul>
+			<li data-row="1" data-col="1" data-sizex="1" data-sizey="4" data-template="/fhem/ftui/templates/tmp_menue.htm"></li>
+        	</ul>
+	</div>
 </body>
 
 </html>
