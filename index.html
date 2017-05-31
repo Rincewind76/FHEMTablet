@@ -28,7 +28,7 @@
 	<script type="text/javascript" src="/fhem/tablet/js/fhem-tablet-ui.js"></script>
 	
     <title>FHEM-Tablet-UI</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,17 +46,23 @@
 	<meta name="widget_base_width" content="102">
 	<meta name="widget_base_height" content="115">
 
+	<!-- Enable this lines for usage with WebViewControl -->
+	<script type="text/javascript" src="/fhem/pgm2/cordova-2.3.0.js"></script>
+	<script type="text/javascript" src="/fhem/js/webviewcontrol.js"></script>
+	<script type="text/javascript">var wvcDevices = {'523931': 'webtablet'}; var wvcUserCssFile="webviewcontrol.css"</script>
+	<!-- End for WebViewControl -->
 </head>
 
 <body>
-	<div class="page" id="index">
-	</div>
+<div class="gridster">
+       	<ul>
+		<!-- Define Menue -->
+		<li data-row="1" data-col="1" data-sizex="1" data-sizey="4" data-template="/fhem/tablet/templates/tmp_menue.htm"></li>
+		<li data-row="3" data-col="2" data-sizex="3" data-sizey="1" data-template="/fhem/tablet/templates/tmp_garagentor.htm"></li>
+		<li data-row="1" data-col="2" data-sizex="2" data-sizey="1" data-template="/fhem/tablet/templates/tmp_tempstatus.htm"></li>
+       	</ul>
+</div>
 
-	<div class="gridster">
-        	<ul>
-			<li data-row="1" data-col="1" data-sizex="1" data-sizey="4" data-template="/fhem/ftui/templates/tmp_menue.htm"></li>
-        	</ul>
-	</div>
 </body>
 
 </html>
