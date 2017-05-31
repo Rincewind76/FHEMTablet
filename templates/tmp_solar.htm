@@ -1,0 +1,26 @@
+<header>PV Anlage</header>
+
+<div class="cell inline">
+	<div data-type="progress" data-device="MySI" data-get="ChargeStatus"></div>
+	<div data-type="label" class="narrow darker small">Akku</div>
+</div>
+
+<div class="cell inline">
+	<div class="cell">
+	<div data-type="label" class="inline darker left">PV Produktion&nbsp;&nbsp;&nbsp;</div>
+	<div data-type="label" data-device="MySTP" data-get="SPOT_PACTOT" data-fix="0" data-unit="W" class="inline right"></div>
+	</div>	
+        <div class="cell">
+        <div data-type="label" class="inline darker left">Einspeisung&nbsp;&nbsp;&nbsp;</div>
+        <div data-type="label" data-device="MyEM" data-get="Einspeisung_Wirkleistung" data-fix="0" data-unit="W" class="inline right"></div>
+        </div>
+        <div class="cell">
+        <div data-type="label" class="inline darker left">Netzbezug&nbsp;&nbsp;&nbsp;</div>
+        <div data-type="label" data-device="MyEM" data-get="Bezug_Wirkleistung" data-fix="0" data-unit="W" class="inline right"></div>
+        </div>
+        <div class="cell">
+        <div data-type="label" class="inline darker left">Verbrauch&nbsp;&nbsp;&nbsp;</div>
+        <div data-type="label" data-device="DirectConsumption" data-get="state" data-fix="0" data-unit="W" class="inline right"></div>
+        </div>
+</div>
+
