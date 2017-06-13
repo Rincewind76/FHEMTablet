@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+     /* FHEM tablet ui */
+     /*
+     * UI builder framework for FHEM
+     *
+     * Version: 2.5.*
+     * URL: https://github.com/knowthelist/fhem-tablet-ui
+     *
+     * Copyright (c) 2015-2017 Mario Stephan <mstephan@shared-files.de>
+     * Under MIT License (http://www.opensource.org/licenses/mit-license.php)
+     *
+     * - create a new folder named 'tablet' in /<fhem-path>/www
+     * - copy all files incl. sub folders into /<fhem-path>/www/tablet
+     * - add 'define TABLETUI HTTPSRV ftui ./www/tablet Tablet' in fhem.cfg
+     * - Tadaaa! A new fhem ui in http://<fhem-url>:8083/fhem/tablet/
+     */
+    -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <!-- define your personal style here, it wont be overwritten  -->
+	<link rel="stylesheet" href="/fhem/tablet/css/fhem-tablet-ui.css" />
+
+	<script type="text/javascript" src="/fhem/tablet/js/fhem-tablet-ui.js"></script>
+	
+    <title>FHEM-Tablet-UI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="debug" content="0"> <!-- 1=output to console;0=not output -->
+	<meta name="gridster_disable" content="1">
+
+	<meta name="longpoll" content="1">
+	<meta name="longpoll_type" content="1">
+	<meta name="longpoll_filter" content=".*">
+	<meta name="longpoll_maxage" content="240">
+	<meta name="shortpoll_interval" content="10">
+
+	<meta name="gridster_cols" content="8">
+	<meta name="gridster_rows" content="5">
+
+	<meta name="widget_base_width" content="120">
+	<meta name="widget_base_height" content="115">
+
+	<!-- Enable this lines for usage with WebViewControl -->
+	<script type="text/javascript" src="/fhem/pgm2/cordova-2.3.0.js"></script>
+	<script type="text/javascript" src="/fhem/js/webviewcontrol.js"></script>
+	<script type="text/javascript">var wvcDevices = {'523931': 'webtablet'}; var wvcUserCssFile="webviewcontrol.css"</script>
+	<!-- End for WebViewControl -->
+</head>
+
+<body>
+<div class="gridster">
+       	<ul>
+		<!-- Define Menue -->
+		<li data-row="1" data-col="1" data-sizex="1" data-sizey="5" data-template="/fhem/tablet/templates/tmp_menue3.htm"></li>
+		<li data-row="1" data-col="2" data-sizex="2" data-sizey="2" data-template="/fhem/tablet/templates/tmp_tempstatus.htm"></li>
+		<li data-row="2" data-col="6" data-sizex="2" data-sizey="1" data-template="/fhem/tablet/templates/tmp_heizung.htm"></li>
+       	</ul>
+</div>
+
+</body>
+
+</html>
+

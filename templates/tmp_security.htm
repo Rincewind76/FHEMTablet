@@ -13,15 +13,21 @@
 </div>
 
 <div class="inline">
-   <div data-type="symbol" data-device="fl.Haustuer" data-get="lock"
-        data-states='["unlocked","locked"]'
-        data-icons='["fa-unlock","fa-lock"]'
-        data-colors='["black","black"]'
-        data-background-icons='["fa-circle","fa-circle"]'
-        data-background-colors='["crimson","green"]'
-        data-hide-on="never"
-        class="cell"></div>
-   <div data-type="label" class="narrow darker small">Haustür</div>
+   <div data-type="circlemenu" class="keepopen">
+    <ul>
+		<li><div data-type="symbol" data-device="fl.Haustuer" data-get="lock"
+        		data-states='["unlocked","locked"]'
+        		data-icons='["fa-unlock","fa-lock"]'
+        		data-colors='["black","black"]'
+        		data-background-icons='["fa-circle","fa-circle"]'
+        		data-background-colors='["crimson","green"]'
+        		data-hide-on="never"</div></li>
+		<li>
+		<li><div data-type="push" data-device="fl.Haustuer" data-set-on="unlock" data-icon="fa-unlock" data-direction="bottom-left"></div></li>
+                <li><div data-type="push" data-device="fl.Haustuer" data-set-on="lock" data-icon="fa-lock" data-direction="bottom-right"></div></li>
+   </ul>
+   </div>
+   <div data-type="label" class="top-space narrow darker small">Haustür</div>
 </div>
 
 <div class="inline">
