@@ -1,11 +1,28 @@
 <header>Heizung</header>
 
 <div class="inline">
-   <div data-type="switch" data-device="hz.Umwaelzpumpe" class="cell" data-icon="fa-refresh"></div>
+   <div data-type="switch" data-device="hz.Waermepumpe.Freigabe" class="cell" data-icon="oa-sani_heating"></div>
+   <div data-type="label" class="narrow darker small">Heizung</div>
+</div>
+
+<div class="inline">
+   <div data-type="switch" data-device="hz.Umwaelzpumpe" class="cell" 
+	data-set-on="on"
+	data-set-off="off"
+	data-states='["on","off"]'
+	data-icons='["fa-refresh fa-spin", "fa-refresh"]'
+	data-background-colors='["#aa6900", "#505050"]'	
+	></div>
    <div data-type="label" class="narrow darker small">Umwälzpumpe</div>
 </div>
 
 <div class="inline">
-   <div data-type="switch" data-device="hz.LueftungMax" data-get="timedstatus" data-set="state" class="cell" data-icon="fa-history"></div>
+   <div data-type="switch" data-device="hz.LueftungMax" data-get="timedstatus" data-set="state" class="cell" 
+        data-set-on="on"
+        data-set-off="off"
+        data-states='["on","off"]'
+        data-icons='["oa-vent_ventilation_level_3 fa-spin", "oa-vent_ventilation_level_3"]'
+        data-background-colors='["#aa6900", "#505050"]'
+	></div>
    <div data-type="label" class="narrow darker small">Lüftung Max</div>
 </div>
