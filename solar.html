@@ -59,9 +59,130 @@
        	<ul>
 		<!-- Define Menue -->
 		<li data-row="1" data-col="1" data-sizex="1" data-sizey="5" data-template="/fhem/tablet/templates/tmp_menue4.htm"></li>
-		<li data-row="1" data-col="2" data-sizex="2" data-sizey="2">
+		<li data-row="1" data-col="2" data-sizex="2" data-sizey="3">
 			<header>PV Daten</header>
+	<div class="newline top-space">
+        	<div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Status Inverter</div>
+	        <div dataltype="label" class="inline darker">&nbsp;</div>
+	        <div data-type="label" data-device="MySTP" data-get="INV_STATUS" data-unit="&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+	</div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;PV Kreis 1</div>
+		<div data-type="label" data-device="MySTP" data-get="SPOT_IDC1" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_UDC1" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;PV Kreis 2</div>
+		<div data-type="label" data-device="MySTP" data-get="SPOT_IDC2" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_UDC2" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;AC Phase 1</div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_IAC1" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_UAC1" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;AC Phase 2</div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_IAC2" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_UAC2" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;AC Phase 3</div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_IAC3" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_UAC3" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Leistung</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_PACTOT" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Temperatur</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySTP" data-get="INV_TEMP" data-fix="1" data-unit="%B0C%0A&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Energie (heute)</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySTP" data-get="SPOT_ETODAY" data-fix="0" data-unit="Wh&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+
+        <div class="newline top-space">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Status Akku</div>
+		<div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySI" data-get="INV_STATUS" data-unit="&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Akku DC</div>
+		<div data-type="label" data-device="MySI" data-get="BAT_IDC" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySI" data-get="BAT_UDC" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Netz AC</div>
+                <div data-type="label" data-device="MySI" data-get="SPOT_IAC1" data-fix="1" data-unit="A" class="inline"></div>
+                <div data-type="label" data-device="MySI" data-get="SPOT_UAC1" data-fix="0" data-unit="V&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Leistung</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySI" data-get="SPOT_PACTOT" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Temperatur</div>
+		<div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySI" data-get="BAT_TEMP" data-fix="1" data-unit="%B0C%0A&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Ladezyklen</div>
+		<div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="MySI" data-get="BAT_CYCLES" data-fix="0" data-unit="&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+
+
 		</li>
+                <li data-row="4" data-col="2" data-sizex="2" data-sizey="2">
+                        <header>Verbraucher</header>
+        <div class="cell top-space">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Waschmaschine</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="du.Waschmaschine" data-get="power" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+	
+	
+        <div class="cell newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Trockner</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="du.Trockner" data-get="power" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="cell newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Klimaanlage</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="sz.Klima.Pwr" data-get="state" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+        <div class="cell newline">
+                <div data-type="label" class="inline darker left">&nbsp;&nbsp;&nbsp;Kino</div>
+                <div dataltype="label" class="inline darker">&nbsp;</div>
+                <div data-type="label" data-device="kn.Entertain.Pwr" data-get="state" data-unit="W&nbsp;&nbsp;&nbsp;" class="inline right"></div>
+        </div>
+
+                </li>		
 		<li data-row="1" data-col="4" data-sizex="5" data-sizey="2">
 			<header>Produktion</header>
 			<div data-type="chart"
